@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://github.com/Suggus1899.png" width="120" alt="Suggus1899 Avatar" />
   <h1>Hi! I'm Gustavo (Suggus1899)</h1>
-  <h3>Systems Engineering Student (7/9 semesters) • Backend-first • Cloud learner</h3>
+  <h3>Systems Engineering Student (8/10 semesters) • Backend-first • Cloud learner</h3>
 
   <p>
     <img src="https://img.shields.io/badge/Backend%20First-111827?style=for-the-badge"/>
@@ -14,6 +14,7 @@
     <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=black"/>
     <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+    <img src="https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
   </p>
 
   <p>
@@ -27,13 +28,14 @@
 ## 🌎 English
 
 ### About me
-I'm Gustavo — a Systems Engineering student. I enjoy building **backend systems**, learning cloud, and designing maintainable applications with clean structure and testing.
+I'm Gustavo — a Systems Engineering student. I enjoy building **backend systems**, learning cloud, and designing maintainable applications with clean structure and testing. I also work with **the OpenAI API** to build AI-powered features and workflows.
 
 ### Core skills (backend-first)
 - **Backend:** Java, Spring Boot (REST APIs, Spring Data JPA, MVC), Kotlin  
-- **Databases:** SQL (PostgreSQL/MySQL/H2), data modeling  
+- **Databases:** SQL (PostgreSQL/MySQL/H2), data modeling, advanced querying  
 - **Cloud:** AWS basics (EC2, RDS, IAM)  
 - **Python apps:** desktop apps + packaging, testing  
+- **AI/LLMs:** Prompt Engineering, OpenAI API integration  
 - **Frontend (supporting):** TypeScript, React (for full-stack projects)  
 - **Tools:** Git/GitHub, IntelliJ, VS Code  
 
@@ -86,8 +88,10 @@ I'm Gustavo — a Systems Engineering student. I enjoy building **backend system
 ---
 
 ## 📚 Courses & certifications
-- Java for Beginners
+- Prompt Engineering — **DataCamp**
+- Advanced SQL — **DataCamp**
 - SQL Fundamentals
+- Java for Beginners
 - HTML & CSS Basics
 - JavaScript Essentials
 
@@ -96,13 +100,14 @@ I'm Gustavo — a Systems Engineering student. I enjoy building **backend system
 ## 🇪🇸 Español
 
 ### Sobre mí
-Soy Gustavo — estudiante de Ingeniería en Sistemas. Me enfoco en **backend**, buenas prácticas y arquitectura mantenible; también estoy aprendiendo nube (AWS) y desarrollo moderno.
+Soy Gustavo — estudiante de Ingeniería en Sistemas. Me enfoco en **backend**, buenas prácticas y arquitectura mantenible; también estoy aprendiendo nube (AWS). Además, trabajo integrando **la API de OpenAI** para crear funcionalidades y flujos con IA (LLMs) y aplico **Prompt Engineering** en proyectos.
 
 ### Habilidades principales (backend-first)
 - **Backend:** Java, Spring Boot (APIs REST, Spring Data JPA, MVC), Kotlin  
-- **Bases de datos:** SQL (PostgreSQL/MySQL/H2), modelado  
+- **Bases de datos:** SQL (PostgreSQL/MySQL/H2), modelado, consultas avanzadas  
 - **Cloud:** AWS (EC2, RDS, IAM — básico)  
 - **Python:** apps de escritorio, empaquetado, testing  
+- **IA/LLMs:** Prompt Engineering, integración con la API de OpenAI  
 - **Frontend (apoyo):** TypeScript, React (para proyectos full-stack)  
 - **Herramientas:** Git/GitHub, IntelliJ, VS Code  
 
@@ -154,7 +159,17 @@ Soy Gustavo — estudiante de Ingeniería en Sistemas. Me enfoco en **backend**,
 
 ---
 
-## 🤝 Contact
+## 📜 Cursos y certificaciones
+- Prompt Engineering — **DataCamp**
+- SQL Avanzado — **DataCamp**
+- Fundamentos de SQL
+- Java para Principiantes
+- HTML y CSS básico
+- JavaScript esencial
+
+---
+
+## 🤝 Contact | Contacto
 - **Email:** gustavojose0819@gmail.com  
 - **Instagram:** https://www.instagram.com/gus_gus1899/  
 
