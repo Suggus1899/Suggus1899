@@ -36,13 +36,13 @@
 I'm Gustavo Colina — a Systems Engineering student (8/10 semesters) and full-stack developer with a backend-first focus. I build web, desktop and cross-platform systems that automate operational workflows and reduce human error, applying Clean Architecture, SOLID and clean domain boundaries. I have shipped encrypted multi-tenant systems (SQLCipher / AES-256-GCM), cross-platform apps with Flutter/Dart (95% code reuse across iOS, Android and Desktop), and production backend services in Java/Spring Boot, Node.js/NestJS and Go. I'm currently sharpening Java 21 + Spring Boot 3, cloud networking and observability for backend deployments.
 
 ## Core skills
-- **Backend:** Java, Spring Boot (REST APIs, Spring Security, Hibernate/JPA, Maven), Node.js, Express, NestJS, Go, PHP, Python
-- **Frontend:** React, Next.js, Vue.js, Angular, TypeScript, Tailwind CSS, Framer Motion, shadcn/ui, React Flow, Zustand, React Query, Vite, Leaflet
+- **Backend:** Java, Spring Boot (REST APIs, Spring Security, Hibernate/JPA, Maven), Node.js, Express, NestJS, Go, PHP, Python, Socket.io
+- **Frontend:** HTML & CSS, JavaScript, TypeScript, React, Next.js, Vue.js, Angular, Tailwind CSS, Framer Motion, shadcn/ui, React Flow, Zustand, React Query, Vite, Leaflet
 - **Mobile / Desktop:** Flutter, Dart, Kotlin, Electron
 - **Databases:** PostgreSQL, MySQL, SQLite, MongoDB, Redis / BullMQ, Prisma, Sequelize, MinIO
 - **Cloud & DevOps:** AWS, Vercel, Docker, Nginx, GitHub Actions, Swagger / OpenAPI
-- **Systems / Low-level:** Rust, C++
-- **AI/LLMs:** Prompt Engineering, OpenAI API, Gemini, Claude Code, Copilot Pro, Windsurf
+- **Systems / Low-level:** Rust, C++, TensorFlow
+- **AI/LLMs:** Prompt Engineering, OpenAI API, Gemini, Gemini CLI, Claude Code, Copilot Pro, Copilot CLI, Windsurf
 - **Languages Spoken:** Spanish (Native), English, French, Italian
 
 ---
