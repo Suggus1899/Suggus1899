@@ -3,23 +3,23 @@
 <div align="center">
   <img src="https://github.com/Suggus1899.png" width="120" alt="Suggus1899 Avatar" />
   <h1>Hi! I'm Gustavo Colina (Suggus1899)</h1>
-  <h3>Systems Engineering Student (8/10 semesters) • Full-Stack • Backend-first • Cloud learner</h3>
+  <h3>Systems Engineering Student (8/10 semesters) • Full-Stack • Cloud learner</h3>
 
   <p>
-    <img src="https://img.shields.io/badge/Backend%20First-111827?style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-    <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
-    <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-    <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=black"/>
-    <img src="https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+    <a href="https://my-portafolio-puce.vercel.app/es"><img src="https://img.shields.io/badge/Full%20Stack-111827?style=for-the-badge"/></a>
+    <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/></a>
+    <a href="https://spring.io/projects/spring-boot"><img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/></a>
+    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/></a>
+    <a href="https://nestjs.com/"><img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/></a>
+    <a href="https://go.dev/"><img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/></a>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/></a>
+    <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/></a>
+    <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/></a>
+    <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/></a>
+    <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/></a>
+    <a href="https://aws.amazon.com/"><img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=black"/></a>
+    <a href="https://platform.openai.com/docs/api-reference"><img src="https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white"/></a>
   </p>
 
   <p>
@@ -33,7 +33,7 @@
 ---
 
 ## About me
-I'm Gustavo Colina — a Systems Engineering student (8/10 semesters) and full-stack developer with a backend-first focus. I build web, desktop and cross-platform systems that automate operational workflows and reduce human error, applying Clean Architecture, SOLID and clean domain boundaries. I have shipped encrypted multi-tenant systems (SQLCipher / AES-256-GCM), cross-platform apps with Flutter/Dart (95% code reuse across iOS, Android and Desktop), and production backend services in Java/Spring Boot, Node.js/NestJS and Go. I'm currently sharpening Java 21 + Spring Boot 3, cloud networking and observability for backend deployments.
+I'm Gustavo Colina — a Systems Engineering student (8/10 semesters) and full-stack developer. I build web, desktop and cross-platform systems that automate operational workflows and reduce human error, applying Clean Architecture, SOLID and clean domain boundaries. I have shipped encrypted multi-tenant systems (SQLCipher / AES-256-GCM), cross-platform apps with Flutter/Dart (95% code reuse across iOS, Android and Desktop), and production backend services in Java/Spring Boot, Node.js/NestJS and Go. I'm currently sharpening Java 21 + Spring Boot 3, cloud networking and observability for backend deployments.
 
 ## Core skills
 - **Backend:** Java, Spring Boot (REST APIs, Spring Security, Hibernate/JPA, Maven), Node.js, Express, NestJS, Go, PHP, Python, Socket.io
