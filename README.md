@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://github.com/Suggus1899.png" width="120" style="border-radius:50%" alt="Gustavo Colina" />
   <h1>Gustavo Colina · Suggus1899</h1>
-  <h3>Systems Engineer (8/10) · Full-Stack · Backend-first · Cloud learner</h3>
+  <h3>Full-Stack Developer · Systems Engineer (8/10) · Cloud learner</h3>
 
   <p>
     <a href="https://my-portafolio-puce.vercel.app/en"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
@@ -31,7 +31,7 @@
 
 ## About me
 
-Systems Engineering student (8 of 10 semesters) and full-stack developer with real production experience. I build web, desktop and cross-platform systems that automate operational workflows and eliminate human error, applying Clean Architecture, SOLID and clean domain boundaries across every layer.
+Full-Stack Developer and Systems Engineering student (8 of 10 semesters) with real production experience across the entire stack — from REST APIs and databases to React/Next.js frontends and Flutter cross-platform apps. I build web, desktop and mobile systems that automate operational workflows and eliminate human error, applying Clean Architecture, SOLID and clean domain boundaries at every layer.
 
 **Shipped in production:**
 - Multi-tenant SaaS with AES-256-GCM encryption, 39 E2E tests (Playwright) and Turborepo monorepo
