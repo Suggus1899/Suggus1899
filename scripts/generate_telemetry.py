@@ -70,7 +70,12 @@ for year in profile["contributionsCollection"]["contributionYears"]:
         """
         query($login: String!, $from: DateTime!, $to: DateTime!) {
           user(login: $login) {
-            contributionsCollection(from: $from, to: $to) { totalCommitContributions }
+            contributionsCollection(from: $from, to: $to) {
+              commitContributionsByRepository(maxRepositories: 100) {
+                repository { nameWithOwner }
+                contributions { totalCount }
+              }
+            }
           }
         }
         """,
@@ -80,14 +85,19 @@ for year in profile["contributionsCollection"]["contributionYears"]:
             "to": f"{year}-12-31T23:59:59Z",
         },
     )
-    commits += contribution["user"]["contributionsCollection"]["totalCommitContributions"]
+    repository_contributions = contribution["user"]["contributionsCollection"]["commitContributionsByRepository"]
+    commits += sum(
+        item["contributions"]["totalCount"]
+        for item in repository_contributions
+        if item["repository"]["nameWithOwner"].lower() != f"{USERNAME}/{USERNAME}".lower()
+    )
 
 repos = profile["repositories"]["nodes"]
 public_prs = rest("/search/issues", {"q": f"author:{USERNAME} type:pr is:public", "per_page": 1})["total_count"]
 public_issues = rest("/search/issues", {"q": f"author:{USERNAME} type:issue is:public", "per_page": 1})["total_count"]
 stats = [
     ("TOTAL STARS", sum(repo["stargazerCount"] for repo in repos)),
-    ("TOTAL COMMITS", commits),
+    ("CODE COMMITS", commits),
     ("PUBLIC PRs", public_prs),
     ("PUBLIC ISSUES", public_issues),
     ("CONTRIBUTED TO", profile["repositoriesContributedTo"]["totalCount"]),
