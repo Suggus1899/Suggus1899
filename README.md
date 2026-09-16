@@ -115,8 +115,7 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
 ## `05 // GITHUB_TELEMETRY`
 
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Suggus1899&theme=radical" alt="GitHub statistics: commits, stars, pull requests and issues" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Suggus1899&theme=radical" alt="Languages by repository" />
+  <img width="100%" src="./assets/github-telemetry.svg" alt="Live GitHub statistics and languages by repository" />
 </p>
 
 ## `06 // EDUCATION`
