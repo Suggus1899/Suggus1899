@@ -115,8 +115,8 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
 ## `05 // GITHUB_TELEMETRY`
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Suggus1899&show_icons=true&hide_border=true&bg_color=00000000&title_color=00A8E8&text_color=8B949E&icon_color=6E40C9&rank_icon=github" alt="Gustavo's GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Suggus1899&layout=compact&hide_border=true&bg_color=00000000&title_color=00A8E8&text_color=8B949E&langs_count=8" alt="Most used languages" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Suggus1899&theme=radical" alt="GitHub statistics: commits, stars, pull requests and issues" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Suggus1899&theme=radical" alt="Languages by repository" />
 </p>
 
 ## `06 // EDUCATION`
