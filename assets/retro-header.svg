@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">Gustavo Colina — Full-Stack Developer</title>
-  <desc id="desc">Animated retro-futuristic header with a neon grid, scanlines and terminal cursor.</desc>
+  <desc id="desc">Animated retro-futuristic header with neon perspective grid, starfield, chromatic glitch and terminal effects.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070216"/>
-      <stop offset=".5" stop-color="#13072b"/>
+      <stop offset="0" stop-color="#05010f"/>
+      <stop offset=".52" stop-color="#16052f"/>
       <stop offset="1" stop-color="#001b2e"/>
     </linearGradient>
     <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
@@ -12,16 +12,21 @@
       <stop offset=".48" stop-color="#9d4edd"/>
       <stop offset="1" stop-color="#00e5ff"/>
     </linearGradient>
-    <radialGradient id="sun">
+    <linearGradient id="sunColor" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffe66d"/>
-      <stop offset=".45" stop-color="#ff4ecd"/>
+      <stop offset=".55" stop-color="#ff4ecd"/>
+      <stop offset="1" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <radialGradient id="sunAura">
+      <stop offset="0" stop-color="#ff4ecd" stop-opacity=".75"/>
+      <stop offset=".5" stop-color="#ff2bd6" stop-opacity=".22"/>
       <stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/>
     </radialGradient>
     <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#ffffff" opacity=".035"/>
     </pattern>
-    <pattern id="grid" width="80" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 80 0 L 0 0 0 40" fill="none" stroke="#00e5ff" stroke-width="1" opacity=".32"/>
+    <pattern id="grid" width="84" height="38" patternUnits="userSpaceOnUse">
+      <path d="M84 0H0V38" fill="none" stroke="#00e5ff" stroke-width="1" opacity=".34"/>
     </pattern>
     <filter id="pinkGlow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
@@ -31,53 +36,143 @@
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="horizon"><rect x="0" y="240" width="1200" height="120"/></clipPath>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="ground"><rect x="0" y="241" width="1200" height="119"/></clipPath>
+    <clipPath id="sunClip"><circle cx="600" cy="250" r="94"/></clipPath>
+    <clipPath id="typeClip"><rect class="type-mask" x="393" y="204" width="414" height="31"/></clipPath>
     <style>
-      .grid { animation: gridShift 4s linear infinite; }
-      .scanline { animation: scanMove 5s linear infinite; }
-      .pulse { animation: pulse 2.4s ease-in-out infinite; }
-      .cursor { animation: blink .8s steps(1) infinite; }
-      .dash { stroke-dasharray: 8 12; animation: dataFlow 1.2s linear infinite; }
-      .dot-a { animation: dot 1.8s ease-in-out infinite; }
-      .dot-b { animation: dot 1.8s .3s ease-in-out infinite; }
-      .dot-c { animation: dot 1.8s .6s ease-in-out infinite; }
-      @keyframes gridShift { to { transform: translateY(40px); } }
-      @keyframes scanMove { from { transform: translateY(-30px); } to { transform: translateY(390px); } }
-      @keyframes pulse { 50% { opacity: .72; filter: url(#pinkGlow); } }
+      .grid { animation: gridShift 2.8s linear infinite; }
+      .scanline { animation: scanMove 4.8s linear infinite; }
+      .glow-pulse { animation: glowPulse 2.8s ease-in-out infinite; }
+      .cursor { animation: blink .75s steps(1) infinite; }
+      .dash { stroke-dasharray: 8 12; animation: dataFlow 1.1s linear infinite; }
+      .star { animation: twinkle 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .s2 { animation-delay: -.8s; }
+      .s3 { animation-delay: -1.6s; }
+      .glitch-pink, .glitch-cyan { opacity: 0; animation: glitch 5.5s steps(1) infinite; }
+      .glitch-cyan { animation-delay: .05s; }
+      .type-mask { animation: typing 6s steps(24) infinite; }
+      .sun-lines { animation: sunLines 3s linear infinite; }
+      .meter-1 { animation: meter 1.5s ease-in-out infinite; }
+      .meter-2 { animation: meter 1.5s .2s ease-in-out infinite; }
+      .meter-3 { animation: meter 1.5s .4s ease-in-out infinite; }
+      .meter-4 { animation: meter 1.5s .6s ease-in-out infinite; }
+      .comet { animation: comet 7s ease-in-out infinite; }
+      .frame { animation: framePulse 3.5s ease-in-out infinite; }
+
+      @keyframes gridShift { to { transform: translateY(38px); } }
+      @keyframes scanMove { from { transform: translateY(-32px); } to { transform: translateY(392px); } }
+      @keyframes glowPulse { 50% { opacity: .78; filter: url(#pinkGlow); } }
       @keyframes blink { 50% { opacity: 0; } }
       @keyframes dataFlow { to { stroke-dashoffset: -20; } }
-      @keyframes dot { 50% { opacity: .25; } }
+      @keyframes twinkle { 50% { opacity: .18; transform: scale(.45); } }
+      @keyframes glitch {
+        0%, 89%, 94%, 100% { opacity: 0; transform: translate(0); }
+        90% { opacity: .75; transform: translate(-6px, 1px); }
+        91% { opacity: .45; transform: translate(5px, -1px); }
+        92% { opacity: .7; transform: translate(-3px, 0); }
+        93% { opacity: .3; transform: translate(2px, 1px); }
+      }
+      @keyframes typing {
+        0%, 8% { width: 0; }
+        48%, 78% { width: 414px; }
+        88%, 100% { width: 0; }
+      }
+      @keyframes sunLines { to { transform: translateY(18px); } }
+      @keyframes meter { 50% { opacity: .25; transform: scaleY(.45); } }
+      @keyframes comet {
+        0%, 64% { opacity: 0; transform: translate(-180px, 70px); }
+        68% { opacity: 1; }
+        83% { opacity: 0; transform: translate(1260px, -130px); }
+        100% { opacity: 0; transform: translate(1260px, -130px); }
+      }
+      @keyframes framePulse { 50% { opacity: .5; } }
+
       @media (prefers-reduced-motion: reduce) {
-        .grid, .scanline, .pulse, .cursor, .dash, .dot-a, .dot-b, .dot-c { animation: none; }
+        .grid, .scanline, .glow-pulse, .cursor, .dash, .star,
+        .glitch-pink, .glitch-cyan, .type-mask, .sun-lines,
+        .meter-1, .meter-2, .meter-3, .meter-4, .comet, .frame { animation: none; }
+        .type-mask { width: 414px; }
+        .glitch-pink, .glitch-cyan, .comet { display: none; }
       }
     </style>
   </defs>
 
   <rect width="1200" height="360" rx="24" fill="url(#sky)"/>
-  <circle cx="600" cy="245" r="150" fill="url(#sun)" opacity=".72"/>
-  <g clip-path="url(#horizon)" class="grid">
-    <rect x="-120" y="200" width="1440" height="220" fill="url(#grid)" transform="skewX(-22)"/>
-  </g>
-  <path d="M0 245H1200" stroke="#ff2bd6" stroke-width="2" opacity=".8" filter="url(#pinkGlow)"/>
-  <path class="dash" d="M85 75H315M885 75h230" stroke="#00e5ff" stroke-width="2" opacity=".72"/>
 
+  <!-- Animated starfield -->
+  <g fill="#dffcff">
+    <circle class="star" cx="92" cy="51" r="1.7"/><circle class="star s2" cx="178" cy="111" r="1.2"/>
+    <circle class="star s3" cx="276" cy="43" r="2"/><circle class="star s2" cx="359" cy="91" r="1.4"/>
+    <circle class="star s3" cx="456" cy="37" r="1.1"/><circle class="star" cx="742" cy="46" r="1.5"/>
+    <circle class="star s2" cx="838" cy="103" r="1.8"/><circle class="star s3" cx="934" cy="39" r="1.2"/>
+    <circle class="star" cx="1028" cy="87" r="2"/><circle class="star s2" cx="1124" cy="48" r="1.4"/>
+    <circle class="star s3" cx="116" cy="184" r="1.1"/><circle class="star" cx="1082" cy="176" r="1.3"/>
+  </g>
+
+  <!-- Shooting data comet -->
+  <g class="comet" filter="url(#cyanGlow)">
+    <path d="M0 0L105 -15" stroke="#00e5ff" stroke-width="2" opacity=".7"/>
+    <circle cx="110" cy="-16" r="3.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Retro sun -->
+  <circle cx="600" cy="250" r="148" fill="url(#sunAura)" class="glow-pulse"/>
+  <circle cx="600" cy="250" r="94" fill="url(#sunColor)" opacity=".92"/>
+  <g class="sun-lines" clip-path="url(#sunClip)" fill="#16052f" opacity=".68">
+    <rect x="500" y="245" width="200" height="5"/>
+    <rect x="500" y="260" width="200" height="7"/>
+    <rect x="500" y="279" width="200" height="9"/>
+    <rect x="500" y="302" width="200" height="12"/>
+    <rect x="500" y="329" width="200" height="15"/>
+  </g>
+
+  <!-- Moving perspective grid -->
+  <g clip-path="url(#ground)">
+    <g class="grid">
+      <rect x="-160" y="203" width="1520" height="220" fill="url(#grid)" transform="skewX(-20)"/>
+    </g>
+    <g stroke="#9d4edd" stroke-width="1" opacity=".3">
+      <path d="M600 241L80 360M600 241L260 360M600 241L430 360M600 241L770 360M600 241L940 360M600 241L1120 360"/>
+    </g>
+  </g>
+  <path d="M0 241H1200" stroke="#ff2bd6" stroke-width="2" opacity=".86" filter="url(#pinkGlow)"/>
+
+  <!-- HUD rails -->
+  <path class="dash" d="M80 72H308M892 72h228" stroke="#00e5ff" stroke-width="2" opacity=".72"/>
+  <path d="M58 49v38M58 49h38M1142 49v38M1142 49h-38" fill="none" stroke="#ff2bd6" stroke-width="2" opacity=".6"/>
+
+  <!-- Chromatic glitch layers -->
+  <g font-family="'Courier New', Consolas, monospace" text-anchor="middle" font-size="66" font-weight="700" letter-spacing="3">
+    <text class="glitch-pink" x="600" y="156" fill="#ff2bd6">GUSTAVO COLINA</text>
+    <text class="glitch-cyan" x="600" y="156" fill="#00e5ff">GUSTAVO COLINA</text>
+  </g>
+
+  <!-- Main typography -->
   <g font-family="'Courier New', Consolas, monospace" text-anchor="middle">
-    <text x="600" y="70" fill="#00e5ff" font-size="16" letter-spacing="5">SYSTEM PROFILE // ONLINE</text>
-    <text class="pulse" x="600" y="153" fill="url(#neon)" font-size="66" font-weight="700" letter-spacing="3" filter="url(#pinkGlow)">GUSTAVO COLINA</text>
-    <text x="600" y="198" fill="#f4eaff" font-size="22" letter-spacing="4">FULL-STACK DEVELOPER</text>
-    <text x="585" y="227" fill="#00e5ff" font-size="15" letter-spacing="2">WEB // DESKTOP // MOBILE</text>
-    <rect class="cursor" x="786" y="211" width="11" height="19" fill="#00e5ff" filter="url(#cyanGlow)"/>
+    <text x="600" y="68" fill="#00e5ff" font-size="16" letter-spacing="5">SYSTEM PROFILE // ONLINE</text>
+    <text class="glow-pulse" x="600" y="156" fill="url(#neon)" font-size="66" font-weight="700" letter-spacing="3" filter="url(#pinkGlow)">GUSTAVO COLINA</text>
+    <text x="600" y="196" fill="#f4eaff" font-size="21" letter-spacing="4">FULL-STACK DEVELOPER</text>
+    <g clip-path="url(#typeClip)">
+      <text x="600" y="225" fill="#00e5ff" font-size="15" letter-spacing="2">WEB // DESKTOP // MOBILE</text>
+    </g>
+    <rect class="cursor" x="803" y="209" width="10" height="19" fill="#00e5ff" filter="url(#cyanGlow)"/>
   </g>
 
-  <g transform="translate(92 315)">
-    <circle class="dot-a" cx="0" cy="0" r="5" fill="#ff2bd6"/>
-    <circle class="dot-b" cx="20" cy="0" r="5" fill="#9d4edd"/>
-    <circle class="dot-c" cx="40" cy="0" r="5" fill="#00e5ff"/>
-    <text x="58" y="5" fill="#b9a8d4" font-size="13" font-family="'Courier New', Consolas, monospace">BUILDING RELIABLE SYSTEMS SINCE 2024</text>
+  <!-- Signal meter -->
+  <g transform="translate(94 302)" fill="#00e5ff" filter="url(#cyanGlow)">
+    <rect class="meter-1" x="0" y="12" width="7" height="8"/>
+    <rect class="meter-2" x="12" y="8" width="7" height="12"/>
+    <rect class="meter-3" x="24" y="4" width="7" height="16"/>
+    <rect class="meter-4" x="36" y="0" width="7" height="20"/>
   </g>
-  <text x="1108" y="320" text-anchor="end" fill="#b9a8d4" font-size="13" font-family="'Courier New', Consolas, monospace">ARAGUA // VE</text>
+  <text x="150" y="320" fill="#b9a8d4" font-size="13" font-family="'Courier New', Consolas, monospace">BUILDING RELIABLE SYSTEMS SINCE 2024</text>
+  <text x="1106" y="320" text-anchor="end" fill="#b9a8d4" font-size="13" font-family="'Courier New', Consolas, monospace">ARAGUA // VE</text>
 
-  <rect class="scanline" x="0" y="-20" width="1200" height="26" fill="#00e5ff" opacity=".055"/>
+  <!-- CRT finish -->
+  <rect class="scanline" x="0" y="-24" width="1200" height="28" fill="#00e5ff" opacity=".06"/>
   <rect width="1200" height="360" rx="24" fill="url(#scan)"/>
-  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".75"/>
+  <rect class="frame" x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".8"/>
 </svg>
