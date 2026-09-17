@@ -50,6 +50,8 @@ profile = graphql(
       user(login: $login) {
         repositories(first: 100, privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false) {
           nodes { stargazerCount primaryLanguage { name } }
+          pageInfo { hasNextPage }
+          totalCount
         }
         repositoriesContributedTo(
           first: 1,
@@ -93,22 +95,27 @@ for year in profile["contributionsCollection"]["contributionYears"]:
     )
 
 repos = profile["repositories"]["nodes"]
+if profile["repositories"]["pageInfo"]["hasNextPage"]:
+    raise RuntimeError("More than 100 public repositories: pagination is required before publishing telemetry")
 public_prs = rest("/search/issues", {"q": f"author:{USERNAME} type:pr is:public", "per_page": 1})["total_count"]
 public_issues = rest("/search/issues", {"q": f"author:{USERNAME} type:issue is:public", "per_page": 1})["total_count"]
 stats = [
-    ("TOTAL STARS", sum(repo["stargazerCount"] for repo in repos)),
-    ("CODE COMMITS", commits),
+    ("STARS RECEIVED", sum(repo["stargazerCount"] for repo in repos)),
+    ("GITHUB COMMITS", commits),
     ("PUBLIC PRs", public_prs),
     ("PUBLIC ISSUES", public_issues),
-    ("CONTRIBUTED TO", profile["repositoriesContributedTo"]["totalCount"]),
+    ("REPOS CONTRIBUTED", profile["repositoriesContributedTo"]["totalCount"]),
 ]
-languages = Counter(
-    repo["primaryLanguage"]["name"]
+language_counts = Counter(
+    repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else "No language"
     for repo in repos
-    if repo["primaryLanguage"]
-).most_common(5)
+)
+top_languages = language_counts.most_common(4)
+other_count = sum(language_counts.values()) - sum(count for _, count in top_languages)
+languages = top_languages + ([('Other / none', other_count)] if other_count else [])
+assert sum(count for _, count in languages) == len(repos)
 
-colors = ["#2f81f7", "#fe428e", "#f7812b", "#f8d847", "#39c5cf"]
+colors = ["#f89820", "#5382a1", "#c4a484", "#7cb342", "#8d6e63"]
 circumference = 2 * math.pi * 54
 total = sum(count for _, count in languages) or 1
 offset = 0.0
@@ -147,11 +154,11 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewB
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       text {{ font-family: 'Courier New', Consolas, monospace; }}
-      .panel {{ fill:#141321; stroke:#2b2740; stroke-width:1; }}
-      .heading {{ fill:#fe428e; font-size:23px; font-weight:700; }}
-      .label {{ fill:#a9fef7; font-size:14px; }}
-      .value {{ fill:#f8d847; font-size:15px; font-weight:700; text-anchor:end; }}
-      .small {{ fill:#a9fef7; font-size:13px; }}
+      .panel {{ fill:#17120f; stroke:#6f4e37; stroke-width:1; }}
+      .heading {{ fill:#f89820; font-size:23px; font-weight:700; }}
+      .label {{ fill:#f3e5c8; font-size:14px; }}
+      .value {{ fill:#7cb342; font-size:15px; font-weight:700; text-anchor:end; }}
+      .small {{ fill:#f3e5c8; font-size:13px; }}
       .row {{ opacity:0; animation:enter .45s ease-out forwards; animation-delay:calc(var(--i) * .1s); }}
       .arc {{ animation:pulse 3s ease-in-out infinite; animation-delay:calc(var(--i) * -.35s); }}
       .online {{ animation:blink 1.4s ease-in-out infinite; }}
@@ -161,20 +168,20 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewB
       @media (prefers-reduced-motion:reduce) {{ .row,.arc,.online {{ animation:none; opacity:1; }} }}
     </style>
   </defs>
-  <rect width="900" height="260" rx="12" fill="#0d1117"/>
+  <rect width="900" height="260" rx="12" fill="#0b0908"/>
   <rect class="panel" x="12" y="12" width="414" height="236" rx="9"/>
   <rect class="panel" x="438" y="12" width="450" height="236" rx="9"/>
-  <text x="36" y="52" class="heading">LIVE STATS</text>
-  <circle class="online" cx="393" cy="43" r="5" fill="#3fb950" filter="url(#glow)"/>
+  <text x="36" y="52" class="heading">JVM:// LIVE STATS</text>
+  <circle class="online" cx="393" cy="43" r="5" fill="#7cb342" filter="url(#glow)"/>
   {''.join(stat_rows)}
-  <text x="468" y="52" class="heading">LANGUAGES BY REPO</text>
+  <text x="468" y="52" class="heading">LANGUAGES:// REPOS</text>
   {''.join(legend)}
-  <circle cx="694" cy="143" r="54" fill="none" stroke="#26223a" stroke-width="25"/>
+  <circle cx="694" cy="143" r="54" fill="none" stroke="#3e2723" stroke-width="25"/>
   {''.join(arcs)}
-  <circle cx="694" cy="143" r="35" fill="#141321"/>
-  <text x="694" y="139" text-anchor="middle" class="value" style="font-size:20px">{len(repos)}</text>
-  <text x="694" y="157" text-anchor="middle" class="label" style="font-size:10px">PUBLIC REPOS</text>
-  <text x="854" y="229" text-anchor="end" class="label" style="font-size:10px;opacity:.65">AUTO-REFRESH // GITHUB API</text>
+  <circle cx="694" cy="143" r="35" fill="#17120f"/>
+  <text x="694" y="139" text-anchor="middle" class="value" style="font-size:20px">{profile["repositories"]["totalCount"]}</text>
+  <text x="694" y="157" text-anchor="middle" class="label" style="font-size:9px">OWN PUBLIC</text>
+  <text x="854" y="229" text-anchor="end" class="label" style="font-size:10px;opacity:.65">HOURLY // GITHUB API</text>
 </svg>'''
 
 output = Path(__file__).resolve().parents[1] / "assets" / "github-telemetry.svg"

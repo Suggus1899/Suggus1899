@@ -5,30 +5,22 @@
 </p>
 
 ```text
-> BOOT SEQUENCE COMPLETE
-> ROLE    : FULL-STACK DEVELOPER
-> MISSION : TURN MANUAL WORKFLOWS INTO RELIABLE SOFTWARE
-> STATUS  : AVAILABLE FOR REMOTE COLLABORATION_
+$ javac GustavoColina.java
+$ java GustavoColina
+[JVM] role    = FULL_STACK_DEVELOPER
+[JVM] mission = TURN_MANUAL_WORKFLOWS_INTO_RELIABLE_SOFTWARE
+[JVM] status  = OPEN_TO_REMOTE_COLLABORATION_
 ```
 
 <p align="center">
-  <a href="https://my-portafolio-puce.vercel.app/en"><img src="https://img.shields.io/badge/PORTFOLIO-070216?style=for-the-badge&logo=vercel&logoColor=00E5FF&labelColor=070216&color=FF2BD6" alt="Portfolio" /></a>
-  <a href="mailto:gustavojose0819@gmail.com"><img src="https://img.shields.io/badge/EMAIL-070216?style=for-the-badge&logo=gmail&logoColor=FF2BD6&labelColor=070216&color=9D4EDD" alt="Email" /></a>
-  <a href="https://www.instagram.com/gus_gus1899/"><img src="https://img.shields.io/badge/INSTAGRAM-070216?style=for-the-badge&logo=instagram&logoColor=00E5FF&labelColor=070216&color=00A8E8" alt="Instagram" /></a>
+  <a href="https://my-portafolio-puce.vercel.app/en"><img src="https://img.shields.io/badge/PORTFOLIO-17120F?style=for-the-badge&logo=vercel&logoColor=F3E5C8&labelColor=3E2723&color=F89820" alt="Portfolio" /></a>
+  <a href="mailto:gustavojose0819@gmail.com"><img src="https://img.shields.io/badge/EMAIL-17120F?style=for-the-badge&logo=gmail&logoColor=F3E5C8&labelColor=3E2723&color=8D6E63" alt="Email" /></a>
+  <a href="https://www.instagram.com/gus_gus1899/"><img src="https://img.shields.io/badge/INSTAGRAM-17120F?style=for-the-badge&logo=instagram&logoColor=F3E5C8&labelColor=3E2723&color=5382A1" alt="Instagram" /></a>
 </p>
 
 <br />
 
-<table align="center">
-  <tr>
-    <td align="center"><strong>10,000+</strong><br /><sub>records secured</sub></td>
-    <td align="center"><strong>90%</strong><br /><sub>less process time</sub></td>
-    <td align="center"><strong>95%</strong><br /><sub>cross-platform reuse</sub></td>
-    <td align="center"><strong>39</strong><br /><sub>Playwright E2E tests</sub></td>
-  </tr>
-</table>
-
-## `01 // ABOUT_ME`
+## `01 :: ABOUT_ME.class`
 
 Full-Stack Developer and Systems Engineering student (8/10 semesters) with production experience across REST APIs, databases, React/Next.js frontends and Flutter applications. I care about clean domain boundaries, useful automation and software that is easy to operate.
 
@@ -37,7 +29,7 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
 - ☁️ Currently sharpening Java 21, Spring Boot 3, cloud networking and observability.
 - 🌎 Based in Aragua, Venezuela · open to remote collaboration.
 
-## `02 // TOOLBOX`
+## `02 :: TOOLBOX.jar`
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=java,spring,ts,nodejs,nestjs,go,rust,nextjs,react,flutter,postgres,redis,docker,aws,vercel,git&perline=8&theme=dark" alt="Java, Spring, TypeScript, Node.js, NestJS, Go, Rust, Next.js, React, Flutter, PostgreSQL, Redis, Docker, AWS, Vercel and Git" />
@@ -58,7 +50,7 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
 
 </details>
 
-## `03 // FEATURED_WORK`
+## `03 :: FEATURED_WORK.java`
 
 <table>
   <tr>
@@ -92,7 +84,7 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
   <a href="https://github.com/Suggus1899?tab=repositories"><strong>Explore all repositories →</strong></a>
 </p>
 
-## `04 // EXPERIENCE_LOG`
+## `04 :: EXPERIENCE.log`
 
 <details open>
   <summary><strong>Full-Stack Programmer · KeoIT</strong> — Remote, Peru · Mar 2026–Present</summary>
@@ -112,13 +104,15 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
   <strong>Highlights:</strong> process time cut from 10 minutes to under 1 · 10,000+ secured records · 200+ automated reports per month.
 </details>
 
-## `05 // GITHUB_TELEMETRY`
+## `05 :: GITHUB_TELEMETRY.jvm`
 
 <p align="center">
   <img width="100%" src="./assets/github-telemetry.svg" alt="Live GitHub statistics and languages by repository" />
 </p>
 
-## `06 // EDUCATION`
+<p align="center"><sub>Source: GitHub API · refreshed hourly · owned, public, non-fork repositories. Commits are GitHub contribution totals excluding this profile repository. The language chart counts every repository by its primary language; remaining and unclassified repositories are grouped as “Other / none”.</sub></p>
+
+## `06 :: EDUCATION.class`
 
 - 🎓 Computer Engineering / Systems Engineering — 8 of 10 semesters completed
 - 📊 Data Science, Prompt Engineering and SQL — DataCamp
@@ -126,14 +120,14 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
 
 <p align="center">
   <br />
-  <code>READY PLAYER TWO?</code>
+  <code>System.out.println("READY PLAYER TWO?");</code>
   <br /><br />
   <strong>Have a product or workflow that needs a thoughtful technical solution?</strong>
   <br /><br />
-  <a href="mailto:gustavojose0819@gmail.com"><img src="https://img.shields.io/badge/START_A_CONVERSATION-070216?style=for-the-badge&logo=gmail&logoColor=FF2BD6&labelColor=070216&color=00E5FF" alt="Contact Gustavo" /></a>
+  <a href="mailto:gustavojose0819@gmail.com"><img src="https://img.shields.io/badge/START_A_CONVERSATION-17120F?style=for-the-badge&logo=gmail&logoColor=F3E5C8&labelColor=3E2723&color=F89820" alt="Contact Gustavo" /></a>
   <br /><br />
-  <img src="https://img.shields.io/badge/SYSTEM-ONLINE-00E5FF?style=flat-square&labelColor=070216" alt="System online" />
-  <img src="https://img.shields.io/badge/BUILD-PASSING-FF2BD6?style=flat-square&labelColor=070216" alt="Build passing" />
+  <img src="https://img.shields.io/badge/JVM-ONLINE-7CB342?style=flat-square&labelColor=17120F" alt="JVM online" />
+  <img src="https://img.shields.io/badge/BUILD-PASSING-F89820?style=flat-square&labelColor=17120F" alt="Build passing" />
 </p>
 
-<p align="center"><sub>© 2026 Gustavo Colina // END OF LINE_</sub></p>
+<p align="center"><sub>© 2026 Gustavo Colina :: process finished with exit code 0_</sub></p>
