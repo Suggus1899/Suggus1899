@@ -1,13 +1,13 @@
 <!-- Profile README for Suggus1899 -->
 
 <p align="center">
-  <img width="100%" src="./assets/retro-header.svg" alt="Gustavo Colina — Full-Stack Developer" />
+  <img width="100%" src="./assets/retro-header.svg" alt="Gustavo Colina — Systems Engineer and Full-Stack Developer" />
 </p>
 
 ```text
 $ javac GustavoColina.java
 $ java GustavoColina
-[JVM] role    = FULL_STACK_DEVELOPER
+[JVM] role    = SYSTEMS_ENGINEER_AND_FULL_STACK_DEVELOPER
 [JVM] mission = TURN_MANUAL_WORKFLOWS_INTO_RELIABLE_SOFTWARE
 [JVM] status  = OPEN_TO_REMOTE_COLLABORATION_
 ```
@@ -22,7 +22,7 @@ $ java GustavoColina
 
 ## `01 :: ABOUT_ME.class`
 
-Full-Stack Developer and Systems Engineering student (8/10 semesters) with production experience across REST APIs, databases, React/Next.js frontends and Flutter applications. I care about clean domain boundaries, useful automation and software that is easy to operate.
+Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering from the Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG). I have production experience across REST APIs, databases, React/Next.js frontends and Flutter applications. I care about clean domain boundaries, useful automation and software that is easy to operate.
 
 - 🔐 Built encrypted systems with AES-256-GCM and SQLCipher.
 - 🧩 Shipped multi-tenant and role-based products across web, desktop and mobile.
@@ -114,7 +114,7 @@ Full-Stack Developer and Systems Engineering student (8/10 semesters) with produ
 
 ## `06 :: EDUCATION.class`
 
-- 🎓 Computer Engineering / Systems Engineering — 8 of 10 semesters completed
+- 🎓 Systems Engineering — Degree obtained — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)
 - 📊 Data Science, Prompt Engineering and SQL — DataCamp
 - ☕ Java Fundamentals, OOP and Spring Boot — TodoCode
 
