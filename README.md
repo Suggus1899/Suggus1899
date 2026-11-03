@@ -97,7 +97,7 @@ Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering 
 <br />
 
 <details>
-  <summary><strong>Senior Full-Stack Developer · Industrias de Alimentos El Trébol</strong> · 2025–2026</summary>
+  <summary><strong>Full-Stack Developer Intern · Industrias de Alimentos El Trébol</strong> · February 2026–August 2026</summary>
   <br />
   Designed and delivered LogMaster, an encrypted access-control and visitor-management system with reporting and differentiated operator roles.
   <br /><br />
