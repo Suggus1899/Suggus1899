@@ -117,6 +117,7 @@ Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering 
 - 🎓 Systems Engineering — Degree obtained — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)
 - 📊 Data Science, Prompt Engineering and SQL — DataCamp
 - ☕ Java Fundamentals, OOP and Spring Boot — TodoCode
+- 🔐 Junior Cybersecurity Analyst Career Path — Cisco Networking Academy · Course completed February 4, 2026
 
 <p align="center">
   <br />
