@@ -1,20 +1,22 @@
 <!-- Profile README for Suggus1899 -->
 
 <p align="center">
-  <img width="100%" src="./assets/retro-header.svg" alt="Gustavo Colina — Systems Engineer and Full-Stack Developer" />
+  <img width="100%" src="./assets/retro-header.svg" alt="Gustavo Colina — Full-Stack Software Engineer" />
 </p>
 
 ```text
 $ javac GustavoColina.java
 $ java GustavoColina
-[JVM] role    = SYSTEMS_ENGINEER_AND_FULL_STACK_DEVELOPER
+[JVM] role    = FULL_STACK_SOFTWARE_ENGINEER  // backend-first
 [JVM] mission = TURN_MANUAL_WORKFLOWS_INTO_RELIABLE_SOFTWARE
-[JVM] status  = OPEN_TO_REMOTE_COLLABORATION_
+[JVM] stack   = JAVA | TYPESCRIPT | GO | FLUTTER | POSTGRESQL
+[JVM] status  = OPEN_TO_JUNIOR_REMOTE_ROLES_
 ```
 
 <p align="center">
   <a href="https://my-portafolio-puce.vercel.app/en"><img src="https://img.shields.io/badge/PORTFOLIO-17120F?style=for-the-badge&logo=vercel&logoColor=F3E5C8&labelColor=3E2723&color=F89820" alt="Portfolio" /></a>
   <a href="mailto:gustavojose0819@gmail.com"><img src="https://img.shields.io/badge/EMAIL-17120F?style=for-the-badge&logo=gmail&logoColor=F3E5C8&labelColor=3E2723&color=8D6E63" alt="Email" /></a>
+  <a href="https://github.com/Suggus1899?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-17120F?style=for-the-badge&logo=github&logoColor=F3E5C8&labelColor=3E2723&color=7CB342" alt="Repositories" /></a>
   <a href="https://www.instagram.com/gus_gus1899/"><img src="https://img.shields.io/badge/INSTAGRAM-17120F?style=for-the-badge&logo=instagram&logoColor=F3E5C8&labelColor=3E2723&color=5382A1" alt="Instagram" /></a>
 </p>
 
@@ -22,12 +24,14 @@ $ java GustavoColina
 
 ## `01 :: ABOUT_ME.class`
 
-Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering from the Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG). I have production experience across REST APIs, databases, React/Next.js frontends and Flutter applications. I care about clean domain boundaries, useful automation and software that is easy to operate.
+Full-stack software engineer, backend-first, and Systems Engineering student at UNERG (Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos), graduating in mid-2027. I build REST APIs, PostgreSQL data models, React/Next.js frontends and Flutter apps, and I already ship them for real users. I care about clean domain boundaries, security by default and software that is easy to operate.
 
-- 🔐 Built encrypted systems with AES-256-GCM and SQLCipher.
-- 🧩 Shipped multi-tenant and role-based products across web, desktop and mobile.
+- 🔐 Encrypted PII with AES-256-GCM, pgcrypto and SQLCipher; immutable audit trails and ARCO/GDPR workflows.
+- 🧩 Multi-tenant, role-based products across web, desktop and mobile, from monorepo to Docker deploy.
+- ⚙️ Go services with go-chi, sqlc/pgx, WebSockets and Prometheus metrics.
 - ☁️ Currently sharpening Java 21, Spring Boot 3, cloud networking and observability.
-- 🌎 Based in Aragua, Venezuela · open to remote collaboration.
+- 🎯 Looking for **junior full-stack or backend roles, 100% remote**. Open to relocating to Lisbon.
+- 🌎 Based in Aragua, Venezuela.
 
 ## `02 :: TOOLBOX.jar`
 
@@ -56,8 +60,21 @@ Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering 
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Suggus1899/Visitors">🔐 Visitors — LogMaster SaaS</a></h3>
-      <p>Multi-tenant visitor management with audit trails, ARCO/GDPR workflows, encrypted PII, rate limiting and 39 Playwright E2E tests.</p>
-      <p><sub>Next.js · TypeScript · Node.js · PostgreSQL · Turborepo · Docker</sub></p>
+      <p>Multi-tenant visitor management with immutable audit trails, ARCO/GDPR workflows, AES-256-GCM encrypted PII, nine rate limiters and 39 Playwright E2E tests.</p>
+      <p><sub>Next.js · TypeScript · Express · PostgreSQL · Turborepo · Docker</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Suggus1899/Trickreport">🎫 Trickreport</a></h3>
+      <p>Multi-tenant help desk with Clean Architecture, real-time WebSocket notifications, SLA automations, knowledge base, LDAP/MFA auth and Prometheus + Grafana monitoring.</p>
+      <p><sub>Go · go-chi · pgx · PostgreSQL · Astro SSR · Docker</sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Suggus1899/SaludTech">🩺 SaludTech</a></h3>
+      <p>Buy-now-pay-later HealthTech for Venezuela: zero-interest installments for medical services, with credit lines, QR payments and pgcrypto-encrypted patient data.</p>
+      <p><sub>Go · sqlc · PostgreSQL · Next.js 16 · Turborepo · next-intl</sub></p>
+      <a href="https://salud-tech-cashea-medico-web-landin.vercel.app">Live demo →</a>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Suggus1899/Netlab-system">🌐 Netlab System</a></h3>
@@ -68,14 +85,14 @@ Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering 
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://my-portafolio-puce.vercel.app/en">✨ Multilingual Portfolio</a></h3>
-      <p>Portfolio available in four languages, with dark mode, technical writing, SEO and a validated contact workflow.</p>
-      <p><sub>Next.js 16 · React 19 · Tailwind CSS 4 · next-intl · Framer Motion</sub></p>
+      <h3><a href="https://github.com/Suggus1899/MedAseets">🏥 MedAssets</a></h3>
+      <p>Inventory, traceability and preventive maintenance for medical equipment across hospital networks, with background jobs and an offline-first QR PWA.</p>
+      <p><sub>NestJS · Prisma · PostgreSQL · BullMQ · Redis · React</sub></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Suggus1899/MedAseets">🏥 MedAssets</a></h3>
-      <p>Inventory, traceability and preventive-maintenance management for medical equipment across hospital networks.</p>
-      <p><sub>TypeScript</sub></p>
+      <h3><a href="https://my-portafolio-puce.vercel.app/en">✨ Multilingual Portfolio</a></h3>
+      <p>Portfolio in four languages, with dark mode, technical writing, SEO and a validated contact workflow.</p>
+      <p><sub>Next.js 16 · React 19 · Tailwind CSS 4 · next-intl · Framer Motion</sub></p>
     </td>
   </tr>
 </table>
@@ -114,7 +131,7 @@ Systems Engineer and Full-Stack Developer, with a degree in Systems Engineering 
 
 ## `06 :: EDUCATION.class`
 
-- 🎓 Systems Engineering — Degree obtained — Universidad Nacional Experimental de los Llanos Centrales Rómulo Gallegos (UNERG)
+- 🎓 Systems Engineering — UNERG · in progress, graduating mid-2027
 - 📊 Data Science, Prompt Engineering and SQL — DataCamp
 - ☕ Java Fundamentals, OOP and Spring Boot — TodoCode
 - 🔐 Junior Cybersecurity Analyst Career Path — Cisco Networking Academy · Course completed February 4, 2026
